@@ -5,7 +5,6 @@ const userData = require('./userData.json');
 const postData = require('./postData.json');
 const commentData = require('./commentData.json');
 
-
 const seedDatabase = async () => {
   await sequelize.sync({ force: true });
 
@@ -20,16 +19,20 @@ const seedDatabase = async () => {
       user_id: users[Math.floor(Math.random() * users.length)].id,
     });
 
-    const numComments = Math.floor(Math.random() * 10); 
+    if (commentData[createdPost.id]) {
+      for (const comment of commentData[createdPost.id]) {
+        const randomUser = users[Math.floor(Math.random() * users.length)];
+        console.log('Creating comment with user_id:', randomUser.id, 'and post_id:', createdPost.id);
 
-    for (let i = 0; i < numComments; i++) {
-      await Comment.create({
-        user_id: users[Math.floor(Math.random() * users.length)].id,
-        post_id: createdPost.id,
-        content: 'This is a comment.', 
-      });
+        await Comment.create({
+          user_id: randomUser.id,
+          post_id: createdPost.id,
+          content: comment.content,
+        });
+      }
     }
   }
+
   process.exit(0);
 };
 
