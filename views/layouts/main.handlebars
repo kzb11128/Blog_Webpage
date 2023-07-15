@@ -13,9 +13,8 @@
     <header class="display-flex justify-space-between align-center p-2">
       <nav>
         <a href="/">Homepage</a>
-        <!-- Conditionally render login or logout links -->
+        <a href="/dashboard">Dashboard</a> |
         {{#if logged_in}}
-        <a href="/profile">Dashboard</a> |
         <button class="no-button" id="logout">logout</button>
         {{else}}
         <a href="/login">login</a>
@@ -23,7 +22,6 @@
       </nav>
     </header>
     <main class="container container-fluid mt-5">
-      <!-- Render the sub layout -->
       {{{ body }}}
     </main>
     <footer>
@@ -31,7 +29,6 @@
     </footer>
   </div>
 
-  <!-- Render script for logged in users only -->
   {{#if logged_in}}
   <script src="/js/logout.js"></script>
   {{/if}}
