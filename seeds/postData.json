@@ -1,17 +1,26 @@
 [
   {
-    "title": "Test 1",
-    "content": "Testing in Progress",
-    "date": "2018-01-01"
+    "title": "Post 1",
+    "post_description": "This is a test post 1"
   },
   {
-    "title": "Test 2",
-    "content": "Testing in Progress",
-    "date": "2020-01-01"
+    "title": "Post 2",
+    "post_description": "This is a test post 2"
   },
   {
-    "title": "Test 3",
-    "content": "Testing in Progress",
-    "date": "2022-01-01"
+    "title": "Post 3",
+    "post_description": "This is a test post 3"
+  },
+  {
+    "title": "Post 4",
+    "post_description": "This is a test post 4"
+  },
+  {
+    "title": "Post 5",
+    "post_description": "This is a test post 5"
+  },
+  {
+    "title": "Post 6",
+    "post_description": "This is a test post 6"
   }
 ]

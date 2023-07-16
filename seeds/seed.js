@@ -14,23 +14,18 @@ const seedDatabase = async () => {
   });
 
   for (const post of postData) {
-    const createdPost = await Post.create({
+    await Post.create({
       ...post,
       user_id: users[Math.floor(Math.random() * users.length)].id,
     });
+  }
 
-    if (commentData[createdPost.id]) {
-      for (const comment of commentData[createdPost.id]) {
-        const randomUser = users[Math.floor(Math.random() * users.length)];
-        console.log('Creating comment with user_id:', randomUser.id, 'and post_id:', createdPost.id);
-
-        await Comment.create({
-          user_id: randomUser.id,
-          post_id: createdPost.id,
-          content: comment.content,
-        });
-      }
-    }
+  for (const comment of commentData) {
+    await Comment.create({
+      ...comment,
+      user_id: users[Math.floor(Math.random() * users.length)].id,
+      post_id: users[Math.floor(Math.random() * postData.length)].id,
+    });
   }
 
   process.exit(0);

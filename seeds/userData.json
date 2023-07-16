@@ -1,17 +1,32 @@
 [
   {
-    "name": "Kevin",
-    "email": "kevin@hotmail.com",
-    "password": "password12345"
-  },
-  {
     "name": "Mike",
-    "email": "mike@gmail.com",
+    "email": "mike@hotmail.com",
     "password": "password12345"
   },
   {
     "name": "Joe",
-    "email": "joe@aol.com",
+    "email": "joe@gmail.com",
+    "password": "password12345"
+  },
+  {
+    "name": "Kevin",
+    "email": "keiv@aol.com",
+    "password": "password12345"
+  },
+  {
+    "name": "Nick",
+    "email": "nick@gmail.com",
+    "password": "password12345"
+  },
+  {
+    "name": "Steve",
+    "email": "steve@yahoo.com",
+    "password": "password12345"
+  },
+  {
+    "name": "Robert",
+    "email": "bob@yahoo.com",
     "password": "password12345"
   }
 ]

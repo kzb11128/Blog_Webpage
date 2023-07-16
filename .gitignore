@@ -5,7 +5,6 @@
 
 node_modules/
 .env
-README.md
 # User-specific files
 *.rsuser
 *.suo

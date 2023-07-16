@@ -1,16 +1,15 @@
-<h2>Your Posts</h2>
+<div class="dashboard-flex">
+    <h1 class="tech-blog-logo">Hello, {{user.name}}!</h1>
+    <h2 class="your-dashboard">Your Posts</h2>
+    <div class="dash-container">
+        <ul>
+            {{#each posts as |post|}}
+            <li class="dash-fill"><a class="dashboard-link" href="/updatePost/{{post.id}}">{{post.title}}</a></li>
+            <p class="post-description-style">{{post.post_description}}</p>
+            {{/each}}
+        </ul>
+    </div>
+   
 
-<button type="submit" class="btn new-post-button"><a class="link" href="/dashboard/new">+ New Post</a></button>
-<section>
-{{#if posts.length}}
-
-  
-    {{#each posts as |post|}}
-      {{ dashboard-postinfo post }}
-    {{/each}}
-
-
-{{/if}}
-</section>
-
-<script src="/js/add-post.js"></script>
+    <a href="/createPost">Create Post</a>
+</div>

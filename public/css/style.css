@@ -1,0 +1,215 @@
+:root{
+  --gray: #cac0c0;
+  --white: #ffffff;
+  --lightgreen: #92c9ad;
+}
+
+*{
+  background-color: var(--gray);
+}
+
+a{
+  color: white;
+  text-decoration: none;
+}
+
+a:hover{
+  color: lightgray;
+}
+
+header, header > *, .nav-list, .nav-list > * , .nav-list-items > * {
+  background-color: var(--black);
+}
+
+li{
+  list-style: none;
+}
+
+.nav-list{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.nav-list-items{
+  padding: 10px;
+  
+}
+
+.post-card{
+  margin: 20px;
+}
+
+.post-description-style > * {
+  background-color: rgb(255, 255, 255);
+  padding: 20px;
+  line-height: 1.5;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.post-header{
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  background-color: rgb(126, 125, 125);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.post-header > *{
+  background-color: rgb(126, 125, 125);
+  color: white;
+  font-family: "Lucida Console", "Courier New", monospace;
+}
+
+.post-header > * > * {
+  background-color: rgb(126, 125, 125);
+}
+
+.comment-header{
+  background-color: rgb(126, 125, 125);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 10px;
+  color: white;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px; 
+}
+
+.comment-header > * {
+  font-family: "Lucida Console", "Courier New", monospace;
+  background-color: rgb(126, 125, 125);
+  font-size: 25px;
+}
+
+.form-flex{
+  display: flex;
+  flex-direction: column;
+}
+
+.form-input{
+  margin: 5px;
+  background-color: whitesmoke;
+  padding: 5px;
+}
+
+.dashboard-flex{
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.tech-blog-logo{
+  font-family: "OCR A Std","Lucida Console", "Courier New", monospace;
+  display: inline-block;
+  background-color: rgb(255, 255, 255);
+  padding: 15px;
+  margin: 10px;
+  border-radius: 10px;
+  font-size: 36px;
+  color: rgb(0, 0, 0);
+}
+
+.no-button {
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  color: white;
+  text-decoration: none;
+  padding-left: 7px;
+}
+
+.no-button:hover{
+  color: lightgray;
+}
+
+.login-fill{
+  background-color: lightgray;
+}
+
+.flex-comment-input{
+  display: flex;
+  justify-content: center;
+}
+
+.flex-center-comment-btn{
+  display: flex;
+  justify-content: center;
+}
+
+.btn-style{
+  margin-top: 10px;
+  border-radius: 5px;
+  padding: 5px;
+  background-color: var(--lightgreen);
+  border: 2px solid rgb(0, 0, 0);
+  color: white;
+  font-weight: bold;
+}
+
+.btn-style:hover{
+  background-color:rgb(0, 0, 0);
+  border: 2px solid var(--lightgreen);
+  box-shadow: 0px 0px 5px 5px white; 
+}
+
+.input-background{
+  background-color: white;
+}
+
+.delete-btn-style{
+  margin-top: 10px;
+  border-radius: 5px;
+  padding: 5px;
+  background-color: rgb(255, 187, 0);
+  border: 2px solid rgb(255, 187, 0);
+  color: rgb(255, 7, 7);
+  font-weight: bold;
+}
+
+.delete-btn-style:hover{
+  background-color:rgb(255, 187, 0);
+  border: 2px solid rgb(255, 187, 0);
+}
+
+.your-dashboard{
+  color: rgb(255, 255, 255);
+  font-size: 30px;
+}
+
+.dash-container{
+  font-family: "Lucida Console", "Courier New", monospace;
+  background-color: rgb(255, 255, 255);
+  border: 5px rgb(255, 255, 255);
+  padding: 15px;
+  margin: 10px;
+  border-radius: 10px;
+  font-size: 20px;
+  color: white;
+}
+
+.dashboard-link{
+  background-color: var(--lightgreen);
+  padding: 10px;
+  border: 2px solid rgb(0, 0, 0);
+  border-radius: 5px;
+}
+
+.dashboard-link:hover{
+  background-color: rgb(0, 0, 0);
+  border: 2px solid var(--lightgreen);
+  box-shadow: 0px 0px 5px 5px white; 
+}
+
+.dash-fill{
+  background-color: lightgray;
+  padding: 20px;
+}
+
+

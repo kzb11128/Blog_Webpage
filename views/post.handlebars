@@ -1,0 +1,36 @@
+<section class="post-card">
+    <div class="post-header">
+        <h2>{{title}}</h2>
+        <p>Posted by {{user.name}} on {{format_date post_dateCreated}}</p>
+    </div>
+    <div class="post-description-style">
+        <p>{{post_description}}</p>
+    </div>
+</section>
+
+{{#each comments as |comment|}}
+<section class="post-card">
+    <div class="post-header">
+        <p>{{comment.user.name}} ({{format_date comment.comment_dateCreated}})</p>
+    </div>
+    <div class="post-description-style">
+        <p>{{comment.comment_description}}</p>
+    </div>
+</section>
+{{/each }}
+
+<section class="post-card">
+    <div class="comment-header">
+        <h2>Add Comment</h2>
+    </div>
+    <form class="createComment-form post-description-style">
+        <div class="form-flex">
+            <textarea class="form-input" type="text" rows="20" id="create-comment-input" ></textarea>
+        </div>
+        <div class="flex-center-comment-btn">
+            <button class="btn-style">Comment</button>
+        </div>
+    </form>
+</section>
+
+<script src="/js/comment.js"></script>
