@@ -55,7 +55,7 @@ Uses the code with:
 - [bcrypt](https://www.npmjs.com/package/bcrypt)
 
 ## Screenshot
-![Screenshot](./assets/screenshot.jpg)
+![Screenshot](./assets/Screenshot.jpg)
 
 ## Deployed on Heroku
 Link to the [Blog](https://pure-peak-08855-5f6ab4b1af7d.herokuapp.com/)
